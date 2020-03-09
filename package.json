@@ -1,7 +1,6 @@
 {
-  "name": "express-graphql-boilerplate",
+  "name": "assignment",
   "version": "0.1.0",
-  "description": "Just a boilerplate for starting graphQL API projects in node with mongodb",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require babel-register",

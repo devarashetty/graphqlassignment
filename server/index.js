@@ -24,6 +24,10 @@ mongoose.connection
 
 const app = express();
 
+app.use('/',(req,res)=>{
+  res.send("hello world");
+})
+
 app.use('/graphql', expressGraphQL({
   schema,
   pretty: true,
@@ -31,5 +35,5 @@ app.use('/graphql', expressGraphQL({
 }));
 
 app.listen(process.env.APP_PORT, () => {
-  console.log(`App escuchando en puerto ${process.env.APP_PORT}`);
+  console.log(`App running at port ${process.env.APP_PORT}`);
 });

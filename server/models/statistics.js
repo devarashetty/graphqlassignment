@@ -71,6 +71,9 @@ const StatisticsSchema = new Schema({
   v: { type: String, trim: true },
   currentAge: { type: String, trim: true },
   data: {type: DataSchema, trim: true}
-});
+},{
+    collection: 'statistics'
+}
+);
 
 mongoose.model('statistics', StatisticsSchema);
